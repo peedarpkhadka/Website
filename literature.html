@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Literature</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="library.css" rel="stylesheet" type="text/css" media="all"/>
+        <script src="nav_buttons.js"></script>
+
+        <!-- Add Font Awesome for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <a href="Home.html">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                    </a>
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li>
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="uppp">
+            <h2>Literature</h2>
+            <p> 
+            Welcome to the Literature Resources Library!
+            Here, you can explore a variety of free resources poem, story, drama, ficton to enhance your understanding of literature.
+            Explore the free resources to learn about Literature.
+            Enhance your knowledge and skills in literature with curated tutorials, tools, and practice materials.
+            Whether you're a beginner or an advanced learner, you'll find detailed explanations and real-world applications here.
+            Dive in and discover the fascinating world of literature!
+            </p>
+        </div>
+
+        <div class="nav-buttons">
+            <button>All</button>
+            <button>Beginner</button>
+            <button>Intermediate</button>
+            <button>Advanced</button>
+        </div>
+        <div class="box">
+            <!-- Resources card -->
+            <a href="poetry.html" class="card beginner">
+                <h3>Poetry</h3>
+                <p>read the poetry </p>
+                <h4>Cick here to Learn</h4>
+            </a>
+
+            <a href="drama.html" class="card beginner">
+                <h3>Drama</h3>
+                <p>Read drama </p>
+                <h4>Cick here to Learn</h4>
+            </a>
+
+            <a href="prose.html" class="card beginner">
+                <h3>Prose</h3>
+                <p>Read prose </p>
+                <h4>Cick here to Learn</h4>
+            </a>
+
+            <a href="fiction.html" class="card advanced">
+                <h3>Fiction</h3>
+                <p>Start learning fiction </p>
+                <h4>Cick here to Learn</h4>
+            </a>
+        </div>
+        <a href="ResourcesLibrary.html" class="back-button">🔙</a>
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+
+
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>Copyright (c) 2025@ peedarp.com. All rights reserved.</p>
+        </div>
+    </body>
+</html>

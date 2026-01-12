@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login/Register</title>
+        <link href="Login-Register.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="Login-Register.js"></script>
+        
+    </head>
+
+    <div class="form-container">
+        <header class="peedarp-header">
+            <a href="Home.html">
+            <img src="ImagesCollection/lOGO.PNG" alt="Logo" class="logo">
+            </a>
+        </header>
+        
+        <!-- Login form (shown by default) -->
+        <form id="login-form" class="auth-form active" name="f1" action="authentication.php" onsubmit="return validation()" method="POST">
+            <div class="formGroup">
+                <label for="email">Email/Username</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formGroup">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submitButton">Login</button>
+            <a href="#forget-password" id="showForgotPassword">Forgot Password?</a>
+            <p>OR</p>
+        </form>
+    
+        <!-- register button which will show register from when clicking there -->
+        <button id="showRegister" class="submitButton">Register</button>
+
+        <!-- Forgot Password form (hidden by default) -->
+        <form id="forgot-password-form" class="auth-form" style="display: none;" action="send-reset-link.php" method="POST">
+            <div class="formGroup">
+                <label for="forgotEmail">Enter your email address</label>
+                <input type="email" id="forgotEmail" name="email" required>
+            </div>
+            <button type="submit" class="submitButton">Send Reset Link</button>
+            <p><a href="Login-Register.html" id="back-to-login">Back to Login</a></p>
+        </form>
+
+        <!-- Register form (hidden by default) -->
+        <form id="register-form" class="auth-form" style="display: none;">
+            <div class="formGroup">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required>
+            </div>
+            <div class="formGroup">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required>
+            </div>
+            <div class="formGroup">
+                <label for="pNumber">Phone Number</label>
+                <input type="tel" id="pNumber" required>
+            </div>
+            <div class="formGroup">
+                <label for="emailForRegistration">Email</label>
+                <input type="email" id="emailForRegistration" required>
+            </div>
+            <div class="formGroup">
+                <label for="country">Country</label>
+                <input type="text" id="country" required>
+            </div>
+            <div class="formGroup">
+                <label for="createPassword">Create Password</label>
+                <input type="password" id="createPassword" required>
+            </div>
+            <div class="formGroup">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="submitButton">Register</button>
+
+            <!-- back to login link -->
+             <p>Already have an account?<a href="Login-Register.html" id="back-to-login">Login here</a></p>
+        </form>
+
+        <div class="authOptions">
+            <div class="loginViaOther-options">
+                <span>Or continue with:</span>
+                <button class="google" onclick="window.open('https://accounts.google.com/', '_blank')">
+                    <img src="https://static.dezeen.com/uploads/2025/05/sq-google-g-logo-update_dezeen_2364_col_0.jpg" alt="Google Logo" class="auth-logo">
+                </button>
+                <button class="appleId" onclick="window.open('https://appleid.apple.com/', '_blank')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="auth-logo">
+                </button>
+                <button class="facebook" onclick="window.open('https://www.facebook.com/', '_blank')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="auth-logo">
+                </button>
+            </div>
+        </div>
+</html>

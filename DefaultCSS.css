@@ -1,0 +1,436 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+}
+
+
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+
+#headerBox
+{
+	background: black;
+	height: 120px;
+}
+
+#header
+{
+	position: relative;
+	height: 100px;
+}
+
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+{
+	position: absolute;
+	top: 2em;
+	left: -10em;
+	width: 100%;
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+}
+
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#navigationMenu
+{
+	position: absolute;
+	right: 0;
+	top: 2em;
+}
+
+#navigationMenu ul
+{
+	display: inline-block;
+}
+
+#navigationMenu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#navigationMenu li a, #navigationMenu li span
+{
+	display: inline-block;
+	margin-left: 0.50em;
+	padding: 1em 1.5em;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	font-size: 0.90em;
+	font-weight: 600;
+	text-transform: uppercase;
+	outline: 0;
+	color: #FFF;
+}
+
+#navigationMenu ul li a i {
+	margin-right: 5px;
+	font-size: 16px;
+	color: gold;
+}
+
+
+#navigationMenu .current_page_item a
+{
+	background: #3974b8;
+	color: #ffffff;
+}
+
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#mainWrapper
+{
+	background: black;
+
+}
+
+#mainPage
+{
+	text-align: center;
+	color: white;
+	font-style: bold;
+	height: 500px;
+	padding: 2em 0em;
+}
+
+#content {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	line-height: 1.6;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright {
+	width: 100%;
+	overflow: hidden;
+	padding: 2em 0em;
+	background-color: #247180;
+	border-top: 1px solid rgba(251, 11, 11, 0.864);
+}
+
+#copyright p
+{
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: black;
+}
+
+
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+#relatedWrapper
+{
+	overflow: hidden;
+	padding:1em 0em;
+	background: #D3D3D3;
+	text-align: center;
+}
+
+#related-content
+{
+	overflow: hidden;
+}
+
+
+.column1,  .column2,  .column3,  .column4
+{
+	width: 282px;
+}
+
+.column1,  .column2
+{
+	float: left;
+	margin-right: 24px;
+}
+
+.column1 ul, .column2 ul, .column4 ul
+{
+	text-align: left;
+}
+.column1 ul ol a, .column2 ul ol a, .column4 ul ol a
+{
+	text-decoration: transparent;
+	color: blue;
+	font-style: bold;
+	font-size: large;
+}
+
+.column1 ul ol, .column2 ul ol .column4 ul ol {
+    margin-bottom: 10px; 
+}
+
+.column1 ul ol a:hover, .column2 ul ol a:hover, .column4 ul ol a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+.column3
+{
+	float: left;
+}
+.column3 form {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+.column3 input[type="text"] {
+	flex: 1;
+	padding: 8px;
+	border: 1px solid antiquewhite;
+	border-radius: 4px;
+}
+.column3 button {
+	padding: 8px 12px;
+	background-color: aliceblue;
+	border: greenyellow;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.column3 button:hover {
+	background-color: blanchedalmond;
+}
+
+.column4
+{
+	float: right;
+}
+
+
+#header-featured
+{
+height: 30em;
+background-image: url(ImagesCollection/background\ banner.jpg);
+background-position: center;
+background-size: cover;
+}
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+
+#extra2
+{
+	margin-top: 5em;
+}
+
+
+
+/*********************************************************************************/
+/*  GET STARTED button                                                                      */
+/*********************************************************************************/
+div.btn-container {
+	text-align: center;
+	margin-top: 20px;
+}
+.btn-get-started {
+	text-decoration: wavy;
+	padding: 12px 24px;
+	background-color: #00B4D8;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+	font-size: 30px;
+	transition: background-color 0.3s ease;
+}
+.btn-get-started:hover {
+	background-color: brown;
+}
+
+
+/*********************************************************************************/
+/*  Slideshow                                                                     */
+/*********************************************************************************/
+#slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slideshow images */
+.slides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for Previous and Next buttons */
+#slideshow-container .prev, #slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+}
+
+#slideshow-container .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#slideshow-container .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+#slideshow-container .prev:hover, #slideshow-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade animation */
+.slides.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+/*********************************************************************************/
+/*  Informed Consent                                                             */
+/*********************************************************************************/
+.modal {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 500px;
+	width: 90%;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+	margin-top: 0;
+}
+
+.modal-content p {
+	margin: 10px 0;
+}
+
+.modal-content button {
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.accept-btn {
+	background-color: #28a745;
+	color: white;
+}
+
+.decline-btn {
+	background-color: #dc3545;
+	color: white;
+}
+
+/*********************************************************************************/
+/* Responsive design                                                             */
+/*********************************************************************************/
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For tablets */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #navigationMenu ul {
+        flex-direction: column;
+    }
+}
+
+/* For phones */
+@media (max-width: 600px) {
+    .container, #mainPage, #related-content {
+        width: 100%;
+        padding: 5px;
+    }
+    .column1, .column2, .column3, .column4 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #navigationMenu ul {
+        flex-direction: column;
+        font-size: 16px;
+    }
+}

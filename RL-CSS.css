@@ -1,0 +1,55 @@
+/*Course Grid Styling*/
+.course-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	padding: 20px;
+}
+
+.course-card {
+	background-color: antiquewhite;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	text-decoration: solid;
+	color: black;
+	transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 2px 8px 15px red;
+}
+
+.course-card i {
+	font-size: 5em;
+	color: gold;
+	margin-bottom: 10px;
+}
+
+.course-card h3 {
+	font-size: 1.5em;
+	margin: 0;
+	font-weight: 600;
+	color: black;
+	font-style: calc(italic);
+}
+
+.course-icon {
+	width: 216px;
+	height: 148px;
+	margin-bottom: 10px;
+}
+
+/*** Responsive Design for small screens like mobile phones, taplets**/
+@media (max-width: 768px) {
+	.course-grid {
+		grid-template-columns: repeat(2, 1 fr);
+	}
+}
+
+@media (max-width: 480px) {
+	.course-grid {
+		grid-template-columns: 1fr;
+	}
+}

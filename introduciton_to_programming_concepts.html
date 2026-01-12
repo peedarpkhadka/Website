@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Introduction to Programming Concepts</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="computer_programming.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- Add Font Awesome for icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <!-- This body part of the website -->
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <a href="Home.html">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                    </a>
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li>
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <a href="computer_programming.html" class="back-button">Back to Topics</a>
+            <h1>Introduction to Programming Concepts</h1>
+
+            <h2>What is Programming?</h2>
+            <p>
+                Programming is the process of writing instructions for a computer to perform specific tasks. 
+                It’s like giving step-by-step directions to solve problems, from building apps to analyzing data. 
+                Programs are written in programming languages that computers understand.
+            </p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li>Computers execute instructions precisely as written.</li>
+                <li>Programming involves problem-solving and logical thinking.</li>
+                <li>Applications include web development, AI, games, and automation.</li>
+            </ul>
+
+            <h2>Algorithms and Flowcharts</h2>
+            <p>
+                An <em>algorithm</em> is a set of steps to solve a problem, like a recipe for cooking. 
+                For example, to find the largest number in a list:
+            </p>
+
+            <ol>
+                <li>Start with the first number as the largest.</li>
+                <li>Compare it with each number in the list.</li>
+                <li>Update the largest if a bigger number is found.</li>
+                <li>Repeat until the list is fully checked.</li>
+            </ol>
+            <p>A <em>flowchart</em> visually represents an algorithm using shapes:</p>
+            <ul>
+                <li>Oval: Start/End</li>
+                <li>Rectangle: Process/Action</li>
+                <li>Diamond: Decision (e.g., Yes/No)</li>
+                <li>Arrows: Flow of steps</li>
+            </ul>
+            <p><strong>Example Flowchart (Finding Largest Number):</strong> Start → Input list → Set first number as max → Compare with next → If larger, update max → Repeat until end → Output max</p>
+
+            <h2>Pseudocode</h2>
+            <p>Pseudocode is a simplified, human-readable description of an algorithm, not tied to any programming language. It bridges the gap between planning and coding.</p>
+            <p><strong>Example Pseudocode (Largest Number):</strong></p>
+            <pre><code>
+                BEGIN
+                INPUT numbers
+                SET max = numbers[0]
+                FOR each number IN numbers
+                    IF number > max THEN
+                    max = number
+                    ENDIF
+                ENDFOR
+                OUTPUT max
+                END
+            </code></pre>
+
+            <h2>Why Learn This?</h2>
+            <p>Understanding these concepts helps you plan solutions logically before coding, making your programming journey smoother.</p>
+        </div>
+ 
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>Copyright (c) 2025@ peedarp.com. All rights reserved. Unauthourize use of contents from this site is illegel.</p>
+        </div>
+
+    </body>
+</html>

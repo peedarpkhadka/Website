@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Statistics and Probability</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="topics.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <!-- Add Font Awesome for icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li>
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Statistics and Probability</h2>
+
+            <h3>What is Statistics and Probability?</h3>
+            <ul>
+                <li><strong>Statistics</strong>: Analyzes and interprets data to uncover patterns. It’s used in polls, scientific research, and business analytics.</li>
+                <li><strong>Probability</strong>: Quantifies uncertainty, predicting the likelihood of events. It underpins statistical inference.</li>
+            </ul>
+
+            <h3>Measures of Central Tendency</h3>
+            <ul>
+                <li><strong>Mean</strong>: Average of all values. For 2, 4, 6, 8, 10: \( \frac{2+4+6+8+10}{5} = 6 \).</li>
+                <li><strong>Median</strong>: Middle value in ordered data. For 1, 3, 5, 7, 9, median is 5.</li>
+                <li><strong>Mode</strong>: Most frequent value. For 1, 2, 2, 3, 4, mode is 2.</li>
+            </ul>
+
+            <h3>Interactive Statistics Calculator</h3>
+            <div class="interactive-tool">
+                <p>Enter numbers (comma-separated) to calculate mean, median, and mode:</p>
+                <input type="text" id="dataset" placeholder="e.g., 1,2,3,4,5" style="width: 200px;">
+                <button onclick="calculateStats()">Calculate</button>
+                <p class="result" id="statsResult"></p>
+            </div>
+
+            <h3>Measures of Dispersion</h3>
+            <ul>
+                <li><strong>Range</strong>: Max minus min. For 1, 3, 5, 7, 9, range is \( 9 - 1 = 8 \).</li>
+                <li><strong>Variance</strong>: Average squared deviation from the mean. For 1, 3, 5: Mean = 3, variance = \( \frac{(1-3)^2 + (3-3)^2 + (5-3)^2}{3} = \frac{4+0+4}{3} = \frac{8}{3} \).</li>
+                <li><strong>Standard Deviation</strong>: Square root of variance, here \( \sqrt{\frac{8}{3}} \approx 1.63 \).</li>
+            </ul>
+
+            <h3>Example: Analyzing a Dataset</h3>
+            <div class="example">
+                <p>Dataset: 3, 5, 5, 7, 9, 11:</p>
+                <ul>
+                    <li>Mean: \( \frac{3+5+5+7+9+11}{6} = \frac{40}{6} \approx 6.67 \).</li>
+                    <li>Median: Ordered: 3, 5, 5, 7, 9, 11 → average of 5 and 7 = 6.</li>
+                    <li>Mode: 5 (appears twice).</li>
+                    <li>Variance: \( \frac{(3-6.67)^2 + 2(5-6.67)^2 + (7-6.67)^2 + (9-6.67)^2 + (11-6.67)^2}{6} \approx 7.22 \).</li>
+                    <li>Standard Deviation: \( \sqrt{7.22} \approx 2.69 \).</li>
+                </ul>
+            </div>
+
+            <h3>Probability Concepts</h3>
+            <ul>
+                <li><strong>Basic Probability</strong>: \( P(\text{event}) = \frac{\text{favorable outcomes}}{\text{total outcomes}} \). Rolling a 4 on a die: \( \frac{1}{6} \).</li>
+                <li><strong>Independent Events</strong>: \( P(A \text{ and } B) = P(A) \cdot P(B) \). Two coin flips both heads: \( \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4} \).</li>
+                <li><strong>Conditional Probability</strong>: \( P(A|B) = \frac{P(A \text{ and } B)}{P(B)} \). Example: Drawing two aces from a deck without replacement.</li>
+            </ul>
+
+            <h3>Example: Conditional Probability</h3>
+            <div class="example">
+                <p>From a deck of 52 cards, draw two cards without replacement. Probability the second is an ace given the first is an ace:</p>
+                <ul>
+                    <li>\( P(\text{first ace}) = \frac{4}{52} = \frac{1}{13} \).</li>
+                    <li>After one ace, 51 cards remain, 3 aces: \( P(\text{second ace} | \text{first ace}) = \frac{3}{51} = \frac{1}{17} \).</li>
+                </ul>
+            </div>
+
+            <h3>Applications</h3>
+            <ul>
+                <li><strong>Healthcare</strong>: Probability models disease spread; statistics evaluates treatment efficacy.</li>
+                <li><strong>Finance</strong>: Risk assessment uses variance and probability distributions.</li>
+            </ul>
+        </div>
+        <a href="mathematics.html" class="back-icon"> ←</a>
+
+        
+        <!-- Statistics Calculator javascript -->
+        <script>
+            function calculateStats() {
+                const input = document.getElementById('dataset').value;
+                const numbers = input.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+                const resultDiv = document.getElementById('statsResult');
+                
+                if (numbers.length === 0) {
+                    resultDiv.textContent = 'Please enter valid numbers.';
+                    return;
+                }
+                
+                // Mean
+                const mean = numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+                
+                // Median
+                const sorted = [...numbers].sort((a, b) => a - b);
+                const median = sorted.length % 2 === 0
+                    ? (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
+                    : sorted[Math.floor(sorted.length / 2)];
+                
+                // Mode
+                const frequency = {};
+                numbers.forEach(num => frequency[num] = (frequency[num] || 0) + 1);
+                const maxFreq = Math.max(...Object.values(frequency));
+                const mode = Object.keys(frequency).filter(key => frequency[key] === maxFreq).join(', ');
+                
+                resultDiv.textContent = `Mean: ${mean.toFixed(2)}, Median: ${median.toFixed(2)}, Mode: ${mode}`;
+            }
+        </script>
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+        
+        
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+        
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+        
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+                
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+        
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+        <p>Copyright (c) 2025@ peedarp.com. All rights reserved.</p>
+        </div>
+    </body>
+</html>

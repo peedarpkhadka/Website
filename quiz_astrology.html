@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="quiz.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="quiz.js"></script>
+
+        <!-- Add Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a href="Quiz.html" class="back-icon"> ←</a>
+        <h1>Astrology Quiz</h1>
+        <div class="quiz-container">
+            <form id="quiz-form" onsubmit="checkAstroAnswers(event)">
+                <div class="subject-section">
+                    <div class="question">
+                        <p>1. Which zodiac sign is associated with the element of Fire?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro1" value="a"> a) Cancer</label>
+                            <label><input type="radio" name="astro1" value="b"> b) Aries</label>
+                            <label><input type="radio" name="astro1" value="c"> c) Virgo</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>2. What planet rules the zodiac sign Scorpio?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro2" value="a"> a) Venus</label>
+                            <label><input type="radio" name="astro2" value="b"> b) Mars</label>
+                            <label><input type="radio" name="astro2" value="c"> c) Jupiter</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>3. Which zodiac sign is known for being a natural leader?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro3" value="a"> a) Libra</label>
+                            <label><input type="radio" name="astro3" value="b"> b) Leo</label>
+                            <label><input type="radio" name="astro3" value="c"> c) Pisces</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>4. What is the birthstone for the zodiac sign Gemini?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro4" value="a"> a) Emerald</label>
+                            <label><input type="radio" name="astro4" value="b"> b) Pearl</label>
+                            <label><input type="radio" name="astro4" value="c"> c) Sapphire</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>5. Which zodiac sign is associated with the element of Earth?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro5" value="a"> a) Taurus</label>
+                            <label><input type="radio" name="astro5" value="b"> b) Scorpio</label>
+                            <label><input type="radio" name="astro5" value="c"> c) Aquarius</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>6. What planet rules the zodiac sign Libra?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro6" value="a"> a) Mercury</label>
+                            <label><input type="radio" name="astro6" value="b"> b) Venus</label>
+                            <label><input type="radio" name="astro6" value="c"> c) Saturn</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>7. Which zodiac sign is associated with the dates May 21 to June 20?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro7" value="a"> a) Taurus</label>
+                            <label><input type="radio" name="astro7" value="b"> b) Gemini</label>
+                            <label><input type="radio" name="astro7" value="c"> c) Cancer</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>8. What element is associated with the zodiac sign Pisces?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro8" value="a"> a) Fire</label>
+                            <label><input type="radio" name="astro8" value="b"> b) Water</label>
+                            <label><input type="radio" name="astro8" value="c"> c) Air</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>9. Which planet is associated with communication and intellect?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro9" value="a"> a) Jupiter</label>
+                            <label><input type="radio" name="astro9" value="b"> b) Mercury</label>
+                            <label><input type="radio" name="astro9" value="c"> c) Mars</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>10. What zodiac sign is known for being detail-oriented and analytical?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro10" value="a"> a) Virgo</label>
+                            <label><input type="radio" name="astro10" value="b"> b) Sagittarius</label>
+                            <label><input type="radio" name="astro10" value="c"> c) Aries</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>11. Which zodiac sign is associated with the dates December 22 to January 19?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro11" value="a"> a) Capricorn</label>
+                            <label><input type="radio" name="astro11" value="b"> b) Aquarius</label>
+                            <label><input type="radio" name="astro11" value="c"> c) Pisces</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>12. What planet rules the zodiac sign Sagittarius?</p>
+                        <div class="options">
+                            <label><input type="radio" name="astro12" value="a"> a) Jupiter</label>
+                            <label><input type="radio" name="astro12" value="b"> b) Venus</label>
+                            <label><input type="radio" name="astro12" value="c"> c) Saturn</label>
+                        </div>
+                    </div>
+                    <div class="result" id="astro-result"></div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>Copyright (c) 2025@ peedarp.com. All rights reserved. Unauthourize use of contents from this site is illegel.</p>
+        </div>
+    </body>
+</html>

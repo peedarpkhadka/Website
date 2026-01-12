@@ -1,0 +1,22 @@
+h2 { color: #2408f7; 
+    padding-left: 35px;
+}
+h3 { color: #2980b9; 
+    padding-left: 35px;
+}
+h1 { color: #333; }
+.section { background: whitesmoke; padding: 30px; margin-bottom: 20px; border-radius: 5px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px; border: 1px solid #ddd; text-align: center; }
+th {background-color: #2980b9; color: white;}
+ul, ol { padding-left: 20px; }
+li { margin-bottom: 10px; }
+
+/* back icon */
+.back-icon {
+    font-size: 25px;
+    font-style: bold; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}

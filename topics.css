@@ -1,0 +1,24 @@
+
+h2 { color: #2c3e50; 
+    padding-left: 20px;
+}
+h3 { color: #2980b9; 
+    padding-left: 20px;
+}
+p {padding: 20px 20px;}
+.example { background-color: #f0f0f0; padding: 10px; margin: 10px 0; border-left: 4px solid #2980b9; }
+.interactive-tool { background-color: #0ea1d2; padding: 15px; margin: 10px 0; border-radius: 10px; }
+.interactive-tool input, .interactive-tool select, .interactive-tool button { margin: 5px; padding-left: 20px; }
+.result { color: #01060c; font-weight: bold; padding-right: 20px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+th { background-color: #2980b9; color: white; }
+
+/* back icon */
+.back-icon {
+    font-size: 25px;
+    font-style: bold; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}

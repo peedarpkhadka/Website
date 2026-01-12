@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="quiz.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="quiz.js"></script>
+
+        <!-- Add Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a href="Quiz.html" class="back-icon"> ←</a>
+        <h1>Computer Programming Quiz</h1>
+        <div class="quiz-container">
+            <form id="quiz-form" onsubmit="checkCpAnswers(event)">
+                <div class="subject-section">
+                    <div class="question">
+                        <p>1. In Python, how do you print "Hello, World!" to the console?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog1" value="a"> a) print("Hello, World!")</label>
+                            <label><input type="radio" name="prog1" value="b"> b) console.log("Hello, World!")</label>
+                            <label><input type="radio" name="prog1" value="c"> c) echo "Hello, World!"</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>2. What does CSS stand for?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog2" value="a"> a) Computer Style System</label>
+                            <label><input type="radio" name="prog2" value="b"> b) Cascading Style Sheets</label>
+                            <label><input type="radio" name="prog2" value="c"> c) Creative Style Syntax</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>3. What is the correct way to declare a variable in JavaScript?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog3" value="a"> a) var x = 5;</label>
+                            <label><input type="radio" name="prog3" value="b"> b) variable x = 5;</label>
+                            <label><input type="radio" name="prog3" value="c"> c) x = 5;</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>4. In Python, what does the `len()` function do?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog4" value="a"> a) Returns the length of a string or list</label>
+                            <label><input type="radio" name="prog4" value="b"> b) Converts a number to a string</label>
+                            <label><input type="radio" name="prog4" value="c"> c) Loops through a list</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>5. What HTML tag is used to create a hyperlink?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog5" value="a"> a) <pre><code>&lt;link&gt;</code></pre></label>
+                            <label><input type="radio" name="prog5" value="b"> b) <pre><code>&lt;a&gt;</code></pre></label>
+                            <label><input type="radio" name="prog5" value="c"> c) <pre><code>&lt;href&gt;</code></pre></label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>6. In JavaScript, how do you write a single-line comment?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog6" value="a"> a) // This is a comment</label>
+                            <label><input type="radio" name="prog6" value="b"> b) /* This is a comment */</label>
+                            <label><input type="radio" name="prog6" value="c"> c) # This is a comment</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>7. What does the `if` statement do in programming?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog7" value="a"> a) Loops through a block of code</label>
+                            <label><input type="radio" name="prog7" value="b"> b) Executes code based on a condition</label>
+                            <label><input type="radio" name="prog7" value="c"> c) Defines a function</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>8. In CSS, how do you select an element with the ID "header"?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog8" value="a"> a) .header</label>
+                            <label><input type="radio" name="prog8" value="b"> b) #header</label>
+                            <label><input type="radio" name="prog8" value="c"> c) header</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>9. What is the output of `2 + "2"` in JavaScript?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog9" value="a"> a) 4</label>
+                            <label><input type="radio" name="prog9" value="b"> b) "22"</label>
+                            <label><input type="radio" name="prog9" value="c"> c) 22</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>10. In Python, how do you start a for loop?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog10" value="a"> a) for i in range(5):</label>
+                            <label><input type="radio" name="prog10" value="b"> b) for (i = 0; i < 5; i++)</label>
+                            <label><input type="radio" name="prog10" value="c"> c) loop i from 0 to 5</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>11. What does HTML stand for?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog11" value="a"> a) HyperText Markup Language</label>
+                            <label><input type="radio" name="prog11" value="b"> b) HighText Machine Language</label>
+                            <label><input type="radio" name="prog11" value="c"> c) HyperTool Markup Language</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>12. In JavaScript, how do you define a function?</p>
+                        <div class="options">
+                            <label><input type="radio" name="prog12" value="a"> a) function myFunction() {}</label>
+                            <label><input type="radio" name="prog12" value="b"> b) def myFunction():</label>
+                            <label><input type="radio" name="prog12" value="c"> c) func myFunction() {}</label>
+                        </div>
+                    </div>
+                    <div class="result" id="prog-result"></div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>Copyright (c) 2025@ peedarp.com. All rights reserved. Unauthourize use of contents from this site is illegel.</p>
+        </div>
+    </body>
+</html>

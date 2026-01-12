@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Opject-Oriented Progrmming (OPP)</title>
+        <link href="DefaultCSS.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="computer_programming.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- Add Font Awesome for icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <!-- This body part of the website -->
+    <body>
+        <div id="headerBox">
+            <div id="header" class="container">
+                <div id="logo">
+                    <a href="Home.html">
+                    <img src="ImagesCollection/lOGO.PNG" alt="Logo" width="200" height="50" />
+                    </a>
+                </div>
+
+                <div id="navigationMenu">
+                    <ul>
+                        <li>
+                            <a href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="current_page_item">
+                            <a href="ResourcesLibrary.html"><i class="fas fa-book"></i> Resources Library</a>
+                        </li>
+                        <li>
+                            <a href="Videos.html"><i class="fas fa-video"></i> Videos</a>
+                        </li>
+                        <li>
+                            <a href="Quiz.html"><i class="fas fa-lightbulb"></i> Quiz</a>
+                        </li>
+                        <li>
+                            <a href="Articles.html"><i class="fas fa-newspaper"></i> Articles</a>
+                        </li>
+                        <li>
+                            <a href="Login-Register.html"><i class="fas fa-user"></i> Login/Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <a href="computer_programming.html" class="back-button">Back to Topics</a>
+            <h1>Object-Oriented Programming (OOP)</h1>
+
+            <h2>Comparison of Languages</h2>
+            <p>Programming languages are tools for writing software, each with strengths suited to specific tasks. Here’s a comparison of four popular languages:</p>
+            <pre><code>
+                class Dog:
+                    def __init__(self, name):
+                        self.name = name
+    
+                def bark(self):
+                    return f"{self.name} says Woof!"
+
+                my_dog = Dog("Buddy")
+                print(my_dog.bark())  # Output: Buddy says Woof!
+            </code></pre>
+                
+            <h2>Inheritance</h2>
+            <p>Classes can inherit properties and methods form others.</p>
+            <pre><code>
+                class Puppy(Dog):
+                    def play(self):
+                        return f"{self.name} is playing!"
+
+                my_puppy = Puppy("Max")
+                print(my_puppy.bark())  # Output: Max says Woof!
+                print(my_puppy.play()) # Output: Max is playing!
+            </code></pre>
+                
+            <h2>Polymorphism</h2>
+            <p>Objects of different classes can share the same method name with differnt behaviours.</p>
+            <pre><code>
+                class Cat:
+                    def speak(self):
+                        return "Meow"
+
+                class Dog:
+                    def speak(self):
+                        return "Woof"
+
+                pets = [Cat(), Dog()]
+                for pet in pets:
+                    print(pet.speak())  # Output: Meow, Woof
+            </code></pre>
+
+            <h2>Encapsulation</h2>
+            <p>Restrict access to data using private attributes (denoted by __).</p>
+            <pre><code>
+                class BankAccount:
+                    def __init__(self, balance):
+                        self.__balance = balance
+                    
+                    def deposit(self, amount):
+                        self.__balance += amount
+                        return self.__balance
+
+                account = BankAccount(1000)
+                print(account.deposit(500))  # Output: 1500
+                # print(account.__balance)  # Error: Attribute not accessible
+            </code></pre>
+
+            <h2>Why OOP?</h2>
+            <p>OOP organizes code for scalability, making it easier to manage large projects.</p>
+        </div>
+        
+
+        <div id="relatedWrapper">
+            <div id="related-content" class="container">
+                <div class="column1">
+                    <div class="title">
+                        <h2>Related sites</h2>
+                    </div>
+                    <p>Explore a variety of Resource to enhance your learning experience.</p>
+                    <ul>
+                        <ol><a href="https://www.khanacademy.org">Khan Academy</a> </ol>
+                        <ol><a href="https://www.coursera.org">Coursera</a> </ol>
+                        <ol><a href="https://www.edx.org">edX</a> </ol>
+                        <ol><a href="https://www.udacity.com">Udacity</a> </ol>
+                        <ol><a href="https://www.freecoadcamp.org">FreeCodeCamp</a> </ol>
+                    </ul>
+                </div>
+
+                <div class="column2">
+                    <div class="title">
+                        <h2>Find us in:</h2>
+                    </div>
+                    <p>Join with us in these.</p>
+                    <ul>
+                        <ol><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></ol>
+                        <ol><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></ol>
+                        <ol><a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i> X</a></ol>
+                    </ul>
+                </div>
+
+                <div class="column3">
+                    <div class="title">
+                        <h2>Search</h2>
+                    </div>
+                    <p>Search here to find your need one quickly.</p>
+                    <form id="searchForm" onsubmit="performSearch(event)">
+                        <input type="text" id="searchInput" name="query" placeholder="Search..." required>
+                        <button type="submit"><i class="fas fa-search"></i>Search</button>
+                    </form>
+                </div>
+
+                <div class="column4">
+                    <div class="title">
+                        <h2>Contact us</h2>
+                    </div>
+                    <p>Contact us for any queries.</p>
+                    <ul>
+                        <ol><a href="mailto:peedarpkhadka@icloud.com"><i class="fas fa-envelope"></i> iMail</a></ol>
+                        <ol><a href="mobile:+447886190676"><i class="fas fa-phone"></i> Phone</a></ol>
+                        <ol><a href="https://maps.app.goo.gl/eUC4h33JWSMkvPHr8" target="_blank"><i class="fas fa-map-marker-alt"></i> Post</a></ol>
+                    </ul>
+                </div>
+
+                <!-- This is for space between footer and 4 columns/boxes -->
+                <div id="extra2" class="container"></div>	
+
+            </div>
+        </div>
+
+        <div id="copyright" class="container">
+            <p>Copyright (c) 2025@ peedarp.com. All rights reserved. Unauthourize use of contents from this site is illegel.</p>
+        </div>
+</body>
+</html>
